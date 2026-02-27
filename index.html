@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PARA MI JENNI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div id="hearts-container"></div>
+
+  <div class="main-center-container">
+    <div class="cadeado-wrapper" id="heart-lock">
+      <div class="cadeado animated infinite pulse">
+        <div class="coracao"></div>
+        <div class="plus"></div>
+      </div>
+    </div>
+    <p class="instruction-text animated pulse infinite">Haz clic para abrir mi corazón</p>
+  </div>
+
+  <div id="safe-modal" class="modal-overlay">
+    <div class="love-safe">
+      <div class="safe-inner-wrapper">
+        <div class="safe-header">
+          <span>♥ Fecha Especial ??/??/2026 ♥</span>
+        </div>
+        <div class="safe-screen">
+          <span id="screen-text">DD / MM / AAAA</span>
+        </div>
+        <div class="safe-keypad">
+          <button class="key-btn" onclick="pressKey('1')">1</button>
+          <button class="key-btn" onclick="pressKey('2')">2</button>
+          <button class="key-btn" onclick="pressKey('3')">3</button>
+          <button class="key-btn" onclick="pressKey('4')">4</button>
+          <button class="key-btn" onclick="pressKey('5')">5</button>
+          <button class="key-btn" onclick="pressKey('6')">6</button>
+          <button class="key-btn" onclick="pressKey('7')">7</button>
+          <button class="key-btn" onclick="pressKey('8')">8</button>
+          <button class="key-btn" onclick="pressKey('9')">9</button>
+          <button class="key-btn btn-clear" onclick="pressKey('C')">Borrar</button>
+          <button class="key-btn" onclick="pressKey('0')">0</button>
+          <button class="key-btn btn-enter" onclick="checkPassword()">❤</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="letter-container" class="letter-overlay">
+
+    <div class="letter-content">
+      <img src="carta.png" alt="Carta de Amor" class="img-responsive" id="letter-img">
+      <!-- Coloca tu canción como love-song.mp3 en esta misma carpeta -->
+      <audio id="love-song" src="love-song.mp3"></audio>
+      <button id="close-letter" class="btn btn-default btn-sm">Guardar Carta</button>
+     <div id="toast" class="toast">💌 Carta guardada en el corazón ❤️</div>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="./script.js"></script>
+ </body>
+
+</html>
